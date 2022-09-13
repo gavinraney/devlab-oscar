@@ -4,7 +4,7 @@ tasks
 
 whenever: 
   write a little bit on these: (idk how much)
-  - express /peyton
+  - express //peyton
   - npm //colin
   - node //colin
   - ejs //gavin
