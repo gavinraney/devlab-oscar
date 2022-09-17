@@ -12,7 +12,7 @@ app.set("view engine", "ejs");
 
  
 let userName = "you can change this if you would like!";
-let thatData = "";
+//let thatData = "";
 
 app.get('/', function (req, res) {
   res.render('index', { userName: userName});

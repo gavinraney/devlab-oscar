@@ -1,8 +1,17 @@
-<h1 style = "color:blue"> Dev Lab Oscar </h1>
-<h1> This is a live example of sending data between front and back end </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head'); %>
+</head>
+<body>
 
+<h1 class = "heading"> Dev Lab Oscar </h1>
+<br>
+<h1 class = "heading2"> This is a live example of sending data between front and back end </h1>
 
-<h1> Hi there, <%=userName%> </h1>
+<br>
+<h1 class = "heading"> Hi there, <%=userName%> </h1>
+<br>
 
 <form method="post" action="/saveToNode">
     <label>Change the data: </label>
@@ -12,12 +21,14 @@
 
 <br> 
 
-<h2 style = "color:blue"> A little about Express </h2>
-<p> Express is a minimalist web framework for node.js </p>
-
+<div class = "card">
+<h2 class = "subHeading"> A little about Express </h2>
+<p> Express is a minimalist web framework for node.js </p>    
 <p> un ordered list and features will go here </p>
+</div>
 
-<h2 style = "color:blue"> A little about npm</h2>
+<div class = "card">
+<h2 class = "subHeading"> A little about npm</h2>
 <p> npm is a package managing system used to adapt packages of code and incorporate them as they are.
     npm was officially acquired by GitHub in 2020.</p>
 <p>features:</p>
@@ -25,11 +36,17 @@
     npm is very configurable to support a variety of cases.
     The npm Registry contains packages of open-source code for Node.js and countless other needs of the JavaScript community.
 </p>
+</div>
 
-<h2 style = "color:blue"> A little about Node</h2>
+<div class = "card">
+<h2 class = "subHeading"> A little about Node</h2>
 <p> Node is an asynchronous event-driven JavaScript runtime designed for building scalpable network connections.</p>
 <p>features:</p>
 <p>Handles multiple connections concurrently. Callback is fired upon each connection. 
     Node.js will go to sleep if there is nothing to be done.
     Node.js does not involve locks, removing the worry of deadlocking your projects.
     Presents an event loop as a runtime construct rather than a library</p>
+</div>
+
+</body>
+</html>
