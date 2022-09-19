@@ -5,48 +5,88 @@
 </head>
 <body>
 
-<h1 class = "heading"> Dev Lab Oscar </h1>
+    <header>
+        <%- include('partials/header'); %>
+    </header>
 <br>
 <h1 class = "heading2"> This is a live example of sending data between front and back end </h1>
 
 <br>
-<h1 class = "heading"> Hi there, <%=userName%> </h1>
+<h1> Hi there, <%=userName%> </h1>
 <br>
 
 <form method="post" action="/saveToNode">
+    <div class = "form-group">
     <label>Change the data: </label>
     <input type="text" name="userName">
-    <input type="submit" value="send to node via express">
+    <input type="submit" class = "btn btn-primary" value="send to node via express">
+    </div>
 </form>
 
 <br> 
 
 <div class = "card">
-<h2 class = "subHeading"> A little about Express </h2>
-<p> Express is a minimalist web framework for node.js </p>    
-<p> un ordered list and features will go here </p>
+    <h2 class = "subHeading"> A little about Express </h2>
+    <p>Express.js is a free and open source web app framework for Node.js, you can use this to build and design web apps quickly and easily.</p>
+    
+    <p> Features: </p>
+
+    <ul>
+        <li>Faster server side development.</li>
+        <li>Middleware, part of the program that accesses the DB, client requests, etc..</li>
+        <li>Routing, preserves the state of webpages with the help of other URL's.</li>
+        <li>Templating, it provides templating engines for devs to buid dynamic content on web pages.</li>
+        <li>Provides a debugging mechanism that has the ability to pinpoint exactly where the web app has bugs.</li>
+    </ul>
 </div>
 
 <div class = "card">
-<h2 class = "subHeading"> A little about npm</h2>
-<p> npm is a package managing system used to adapt packages of code and incorporate them as they are.
-    npm was officially acquired by GitHub in 2020.</p>
-<p>features:</p>
-<p>Download and immediately use tools. Share your code with anyone on npm or limit it to specific profiles.
-    npm is very configurable to support a variety of cases.
-    The npm Registry contains packages of open-source code for Node.js and countless other needs of the JavaScript community.
-</p>
+    <h2 class = "subHeading"> A little about git </h2>
+    <p>git is fast and easy version control software that makes projects between devs fast and efficient.</p>
+    <p> The biggest thing that sets apart git from other version control software(VCS) is branching and merging.</p>
+    
+    <p> Features: </p>
+
+    <ul>
+        <li>Branching and merging, meaning you can have mulitple local instances of branches that are entirely independant of each other</li>
+        <li>As mentioned, git is fast, nearly all operations are done locally, giving it huge speeds on a centralized system which needs to communicate with a server elsewhere.</li>
+        <li>git is mostly done from the command line, but IDE's have it built in for the most part such as VS code, which simplifies most everything.</li>
+        <li>git is distributed, which means instead of doing a checkout, you can just clone the entire project. </li>
+    </ul>
 </div>
 
 <div class = "card">
-<h2 class = "subHeading"> A little about Node</h2>
-<p> Node is an asynchronous event-driven JavaScript runtime designed for building scalpable network connections.</p>
-<p>features:</p>
-<p>Handles multiple connections concurrently. Callback is fired upon each connection. 
-    Node.js will go to sleep if there is nothing to be done.
-    Node.js does not involve locks, removing the worry of deadlocking your projects.
-    Presents an event loop as a runtime construct rather than a library</p>
+    <h2 class = "subHeading"> A little about npm</h2>
+    <p> NPM is a package managing system used to adapt packages of code and incorporate them as they are.
+        NPM was officially acquired by GitHub in 2020.</p>
+
+    <p>Features:</p>
+
+    <ul>
+        <li>Download and immediately use tools.</li>
+        <li>Share your code with anyone on NPM or limit it to specific profiles.</li>
+        <li>npm is very configurable to support a variety of cases.</li>
+        <li>The NPM Registry contains packages of open-source code for Node.js and countless other needs of the JavaScript community.</li>
+    </ul>
 </div>
+
+<div class = "card">
+    <h2 class = "subHeading"> A little about Node</h2>
+    <p> Node is an asynchronous event-driven JavaScript runtime designed for building scalpable network connections.</p>
+
+    <p>Features:</p>
+
+    <ul>
+        <li>Handles multiple connections concurrently.</li>
+        <li>Callback is fired upon each connection.</li>
+        <li>Node.js will go to sleep if there is nothing to be done.</li>
+        <li>Node.js does not involve locks, removing the worry of deadlocking your projects.</li>
+        <li>Presents an event loop as a runtime construct rather than a library.</li>
+    </ul>
+</div>
+<footer>
+    <%- include('partials/footer'); %>
+</footer>
 
 </body>
 </html>
